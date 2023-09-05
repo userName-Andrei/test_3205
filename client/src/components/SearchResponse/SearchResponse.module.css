@@ -1,0 +1,38 @@
+.data:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.person:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.loading {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-left: 8px solid var(--color-text);
+    border-bottom: 8px solid var(--color-text);
+    border-right: 8px solid var(--color-text);
+    border-top: 8px solid var(--color-bg-btn);
+    transform: rotate(0deg);
+    animation: loading 2s infinite linear;
+    margin: 0 auto;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
